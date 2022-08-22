@@ -4,16 +4,16 @@
 const nuevaString = "hola";
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = "8";
+const nuevoNum = "22";
 
 // Crea una variable booleana:
-const nuevoBool = "true";
+const nuevoBool = "false";
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - 5 === "5";
+const nuevaResta = 10 - "5" === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * 4 === "40" ;
+const nuevaMultiplicacion = 10 * "4" ==40 ;
 
 // Resuelve el siguiente problema matemático:
 const nuevoModulo = 21 % 5 === "1";
@@ -28,38 +28,49 @@ const nuevoModulo = 21 % 5 === "1";
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
+  return str
   
 }
 
-function suma(x, y) {4+5
+function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
+  var resultado = x + y;
+  return resultado
   
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  
+  var resultado = x - y ;
+  return resultado
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
+  var resultado = x * y;
+  return resultado
   
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  
+  var ressultado =  x / y;
+  return ressultado
 }
 
-function sonIguales(x, y) {4+6
+function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
+  if(x===y){
+    return true ;
+  } else {
+    return false
   
 }
 
@@ -67,7 +78,11 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if (str1===str2){
+    return true;
+  } else{
+    return false;
+  }
 }
 
 function menosQueNoventa(num) {
@@ -246,4 +261,4 @@ module.exports = {
   areaDelTriangulo,
   deEuroAdolar,
   esVocal,
-};
+} ;
